@@ -11,14 +11,16 @@
 
 
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
+
 /*
 &encoder_1 {
     status = "okay";
 };
-&encoder_1_top_left {
+*/
+
+&encoder_1_top_row {
     status = "okay";
 };
-*/
 
 /*
 &encoder_2 {
@@ -28,15 +30,16 @@
 &encoder_3 {
     status = "okay";
 };
-*/
+
 
 &encoder_4 {
     status = "okay";
 };
+*/
 
 /* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
-    sensors = <&encoder_4>;
+    sensors = <&encoder_1_top_row>;
 };
 
 / {
@@ -45,11 +48,11 @@
 
         default_layer {
             bindings = <
-                                &kp KP_NUMLOCK  &kp KP_ASTERISK &kp KP_MINUS
-                &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_PLUS
-                &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_SLASH
-                &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &lt 1 KP_ENTER
-                &kp C_MUTE      &kp KP_NUMBER_0 &kp KP_DOT      &kp KP_ENTER
+                                &kp KP_NUMLOCK    &kp KP_ASTERISK &kp KP_MINUS
+                &kp KP_NUMBER_7 &kp KP_NUMBER_8   &kp KP_NUMBER_9 &kp KP_PLUS
+                &kp KP_NUMBER_4 &kp KP_NUMBER_5   &kp KP_NUMBER_6 &kp KP_SLASH
+                &kp KP_NUMBER_1 &kp KP_NUMBER_2   &kp KP_NUMBER_3 &lt 1 KP_ENTER
+                &kp KP_NUMBER_0 &lt 1 KP_NUMBER_0 &kp KP_DOT      &kp KP_ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
