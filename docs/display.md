@@ -14,7 +14,7 @@ The Tidbit's OLED footprint is **I2C** (4 pins). The nice!view clone uses **SPI*
 
 | Display label | SPI signal | Connection | Wire colour |
 |---|---|---|---|
-| SCS | CS (chip select) | Bodge wire → GPIO D1 (P0.06) on nice!nano | Blue |
+| SCS | CS (chip select) | Bodge wire → 106 (P1.06) on nice!nano | Blue |
 | GND | Ground | GND hole in OLED footprint | Black |
 | 3V-5V | VCC | VCC hole in OLED footprint | Red |
 | SCLK | SCK | SCL hole in OLED footprint | Yellow |
@@ -26,7 +26,7 @@ Before wiring, confirm the Tidbit's OLED footprint hole order using a multimeter
 
 ## Bodge wire
 
-Run a short wire from the **SCS** pin on the display to **GPIO D1 (P0.06)** on the nice!nano. 28 AWG silicone wire works well — it is thin and flexible.
+Run a short wire from the **SCS** pin on the display to the **106 (P1.06)** hole on the nice!nano. 28 AWG silicone wire works well — it is thin and flexible.
 
 ## Physical mounting
 
