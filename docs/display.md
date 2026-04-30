@@ -12,13 +12,13 @@ The Tidbit's OLED footprint is **I2C** (4 pins). The nice!view clone uses **SPI*
 
 ## Pin mapping
 
-| Display label | SPI signal | Connection |
-|---|---|---|
-| SCS | CS (chip select) | Bodge wire → GPIO D1 (P0.06) on nice!nano |
-| GND | Ground | GND hole in OLED footprint |
-| 3V-5V | VCC | VCC hole in OLED footprint |
-| SCLK | SCK | SCL hole in OLED footprint |
-| SI | MOSI | SDA hole in OLED footprint |
+| Display label | SPI signal | Connection | Wire colour |
+|---|---|---|---|
+| SCS | CS (chip select) | Bodge wire → GPIO D1 (P0.06) on nice!nano | Blue |
+| GND | Ground | GND hole in OLED footprint | Black |
+| 3V-5V | VCC | VCC hole in OLED footprint | Red |
+| SCLK | SCK | SCL hole in OLED footprint | Yellow |
+| SI | MOSI | SDA hole in OLED footprint | Green |
 
 ## Footprint hole verification
 
